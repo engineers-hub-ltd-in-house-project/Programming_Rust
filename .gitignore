@@ -1,0 +1,57 @@
+# Rust用.gitignore
+
+# ビルド成果物
+/target/
+**/target/
+
+# バックアップファイル
+*.rs.bk
+
+# Cargoのロックファイル（コメントアウトするとgit管理対象になります）
+# Cargo.lock
+
+# 実行ファイル（Windows）
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# デバッグシンボル
+*.pdb
+
+# エディタの設定
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS固有のファイル
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ドキュメントビルド成果物
+/doc/
+/book/
+
+# 環境変数ファイル
+.env
+.env.local
+
+# コードカバレッジ結果
+*.profraw
+coverage/
+
+# カスタムバイナリ出力
+/bin/
+/dist/
+
+# その他の一時ファイル
+*.tmp
+*.log 
